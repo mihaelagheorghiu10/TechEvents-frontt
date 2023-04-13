@@ -1,0 +1,18 @@
+ .divFooterContenedor {
+    padding: 0 30 px;
+    width: 50 vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EE1C41;
+    height: 55px;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+  }
+
+  .h4Title {
+    font-size: 20px;
+    color: #faf3ee;
+  }
