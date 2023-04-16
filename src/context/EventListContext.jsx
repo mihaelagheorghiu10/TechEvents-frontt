@@ -12,17 +12,13 @@ const EventListProvider = ({ children }) => {
 
   const handleEditEvent = (id, newEvent) => {};
 
-  const handleChangeFilterBy = (e) => {
-    setFilterBy(e.target.value);
-  };
-
   const data = {
     eventList,
     filterBy,
+    setFilterBy,
     handleAddEvent,
     handleEditEvent,
     handleRemoveEvent,
-    handleChangeFilterBy,
   };
 
   return (
