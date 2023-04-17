@@ -1,15 +1,20 @@
 import React from 'react'
 import styles from './navbar.module.css'
+import userImage from '../Assets/Image20230417113019.png'
 
 export default function Navbar() {
   return (
     <div className={styles.divContenedor}>
-      <h1 className={styles.h1Title}>Tech Events</h1>
-      <div className={styles.navbarRight}>
+      <div className={[styles.navbar, styles.navbarLeft].join(' ')}>
+        <h1 className={styles.h1Title}>Tech Events</h1>
+      </div>
+      <div className={[styles.navbar, styles.navbarRight].join(' ')}>
         <p>Usuario</p>
-        <div className={styles.imagContainer}>
-          <img className={styles.userImage} alt="imagen Usuario" />
-        </div>
+        <img
+          src={userImage}
+          className={styles.userImage}
+          alt="imagen Usuario"
+        />
       </div>
     </div>
   )
