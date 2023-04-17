@@ -1,4 +1,4 @@
- .divFooterContenedor {
+/*  .divFooterContenedor {
     padding: 0 30 px;
     width: 50 vw;
     display: flex;
@@ -10,7 +10,7 @@
     position: fixed;
     z-index: 100;
     box-sizing: border-box;
-  }
+  } */
 
   .h4Title {
     font-size: 20px;
