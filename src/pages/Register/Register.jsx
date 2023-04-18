@@ -22,6 +22,7 @@ export default function Register() {
     confirmPassword: Yup.string()
     .oneOf([Yup.ref('password'), null],"La contraseña no es la misma")
     .required()
+    
   });
 
   const formik = useFormik({
