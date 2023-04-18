@@ -4,7 +4,7 @@ import style from './register.module.css'
 export default function Register() {
   return (
     <div className={style.registerPage}>
-        <div className={style.registerForm}>
+        <form className={style.registerForm}>
             <div className={style.labelInput}>
                 <label for="userName">Nombre de Usuario</label>
                 <input name="userName" id="userName" type="text" placeholder="Nombre de usuario"/>
@@ -21,9 +21,11 @@ export default function Register() {
                 <label for="passwordConfirm">Confirmar Contraseña</label>
                 <input name="passwordConfirm" id="passwordConfirm" type="password" placeholder="confirmar contraseña"/>
             </div>
+            
             <button className={style.registerButton}>Registrarse</button>
+            
 
-        </div>
+        </form>
       
     </div>
   )
