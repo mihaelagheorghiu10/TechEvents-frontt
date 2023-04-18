@@ -1,8 +1,28 @@
-# Getting Started with Create React App
+# Tech Events
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A software development collective wants to create a web application to manage their online events (workshops, masterclasses, webinars, etc)
+The users would be able to see the description of a given event, sign up and unsign.
+They also would be able to see a list of the events they are signed in.
+The admin should have the tools in order to manage the events.
 
-## Available Scripts
+This is the repo for the front side of the project.
+You can check the back at: [TechEvents-Back](https://github.com/GustavoArdaya/TechEvents-Back)
+
+## Team Members
+
+[Badr El kahouaji](https://github.com/badr151)
+[Daniel Gallego López](https://github.com/Daniel-gallegO)
+[Esther Reyes](https://github.com/Seyerte)
+[Gustavo Ardaya Zubieta](https://github.com/GustavoArdaya)
+[Jaume Vidal Buenafuente](https://github.com/JaumeViBu)
+[Mihaela Gheorghiu](https://github.com/mihaelagheorghiu10)
+
+## Initial Design
+
+![event list view](./readmeImg/eventlist.jpg)
+![event detail view](./readmeImg/eventdetail.jpg)
+
+## Available React Scripts
 
 In the project directory, you can run:
 
