@@ -18,7 +18,7 @@
     gap: 25px;
     width: 100%;
     max-width: 550px;
-}
+}    
 
 .labelInput {
     display: flex;
@@ -26,6 +26,8 @@
     align-items: baseline;
     gap: 15px;
     width: 100%;
+    position:relative;
+
 }
 
 .labelInput label {
@@ -48,4 +50,12 @@
     padding: 5px 10px;
     border-radius: 20px;
     border: none;
+}
+
+.errorToast {
+    position:absolute;
+    right: 5px;
+    bottom: -20px;
+    font-size: smaller;
+    
 }

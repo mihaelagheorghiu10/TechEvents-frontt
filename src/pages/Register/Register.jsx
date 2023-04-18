@@ -6,9 +6,9 @@ import * as Yup from "yup";
 export default function Register() {
   let registerSchema = Yup.object().shape({
     username: Yup.string()
-      .min(6, "El número mínimo de caracteres es 6")
+      .min(8, "El número mínimo de caracteres es 8")
       .max(15, "el número máximo de caracteres es 15")
-      .required(),
+      .required("Campo obligatorio"),
 
     email: Yup.string()
       .email("No es un email válido")
@@ -16,7 +16,12 @@ export default function Register() {
     password: Yup.string()
       .min(8, "El número mínimo de caracteres es 8")
       .max(30, "El número maximo de caracteres es 30")
+      .matches(/[A-Z]/, "Debe incluir mayúsculas")
+      .matches(/[0-9]/, "Debe incluir números")
       .required("Campo obligatorio"),
+    confirmPassword: Yup.string()
+    .oneOf([Yup.ref('password'), null],"La contraseña no es la misma")
+    .required()
   });
 
   const formik = useFormik({
@@ -36,15 +41,18 @@ export default function Register() {
     <div className={style.registerPage}>
       <form className={style.registerForm} onSubmit={formik.handleSubmit}>
         <div className={style.labelInput}>
-          <label for="userName">Nombre de Usuario</label>
+          <label for="username">Nombre de Usuario</label>
           <input
-            name="userName"
-            id="userName"
+            name="username"
+            id="username"
             type="text"
-            placeholder="Nombre de usuario"
+            placeholder="nombre de usuario"
             value={formik.values.username}
             onChange={formik.handleChange}
           />
+          {formik.errors.username ? (
+          <div className={style.errorToast}>{formik.errors.username}</div>
+        ) : null}
         </div>
         <div className={style.labelInput}>
           <label for="email">Email</label>
@@ -56,6 +64,9 @@ export default function Register() {
             value={formik.values.email}
             onChange={formik.handleChange}
           />
+          {formik.errors.email ? (
+          <div className={style.errorToast}>{formik.errors.email}</div>
+        ) : null}
         </div>
         <div className={style.labelInput}>
           <label for="password">Contraseña</label>
@@ -67,17 +78,23 @@ export default function Register() {
             value={formik.values.password}
             onChange={formik.handleChange}
           />
+          {formik.errors.password ? (
+          <div className={style.errorToast}>{formik.errors.password}</div>
+        ) : null}
         </div>
         <div className={style.labelInput}>
           <label for="passwordConfirm">Confirmar Contraseña</label>
           <input
-            name="passwordConfirm"
-            id="passwordConfirm"
+            name="confirmPassword"
+            id="confirmPassword"
             type="password"
             placeholder="confirmar contraseña"
             value={formik.values.confirmPassword}
             onChange={formik.handleChange}
           />
+          {formik.errors.confirmPassword ? (
+          <div className={style.errorToast}>{formik.errors.confirmPassword}</div>
+        ) : null}
         </div>
 
         <button className={style.registerButton} type="submit">Registrarse</button>
