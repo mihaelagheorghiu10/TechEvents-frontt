@@ -17,18 +17,20 @@
     align-items: center;
     gap: 25px;
     width: 100%;
+    max-width: 550px;
 }
 
 .labelInput {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    gap: 5px;
+    gap: 15px;
     width: 100%;
 }
 
 .labelInput label {
     font-weight: bold;
+    padding-left: 10px;
 }
 
 .labelInput input {
@@ -39,7 +41,7 @@
 }
 
 .registerButton {
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: #EE1C41;
     color: white;
     font-weight: bold;
