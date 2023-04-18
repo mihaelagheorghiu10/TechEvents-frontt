@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
+import HomePage from './components/Pages/HomePage/HomePage'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
+          <Route path="/" element={<HomePage />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Routes>
