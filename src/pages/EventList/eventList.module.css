@@ -1,8 +1,8 @@
 .EventListPage {
     /* limits for page including navbar and footer */
 
-    margin-top: 55px;
-    margin-bottom: 80px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     height: 100svh;
 
     display: flex;

@@ -9,7 +9,7 @@ import EventList from './pages/EventList/EventList';
 
 function App() {
   return (
-    //com
+    
     <Router>
       <div className="App">
         <Navbar/>
