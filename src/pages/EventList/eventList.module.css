@@ -1,0 +1,21 @@
+.EventListPage {
+    /* limits for page including navbar and footer */
+
+    margin-top: 55px;
+    margin-bottom: 80px;
+    height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.EventList {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-items: center;
+    justify-content: center;
+    list-style-type: none;
+}

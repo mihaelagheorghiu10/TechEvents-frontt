@@ -1,0 +1,22 @@
+.eventCardContainer {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.cardLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.cardRight {
+    width: 50%;
+    height: 180px;
+    font-size: small;
+}
