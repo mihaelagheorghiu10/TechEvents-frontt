@@ -1,29 +1,30 @@
-import React, { useContext } from "react";
-import * as Yup from "yup";
-import EventListContext from "../../context/EventListContext";
-import { useFormik } from "formik";
-import styles from "./searchbar.module.css";
+import React, { useContext } from 'react'
+import * as Yup from 'yup'
+import EventListContext from '../../context/EventListContext'
+import { useFormik } from 'formik'
+import styles from './searchbar.module.css'
 
 const Searchbar = () => {
-  const { setFilterBy } = useContext(EventListContext);
-
+  //const { setFilterBy } = useContext(EventListContext);
+  const context = useContext(EventListContext)
+  console.log(context)
   let searchSchema = Yup.object().shape({
     search: Yup.string()
-      .min(3, "Introduce al menos 3 caracteres a buscar")
-      .max(20, "El número máximo de caracteres es 20"),
-  });
+      .min(3, 'Introduce al menos 3 caracteres a buscar')
+      .max(20, 'El número máximo de caracteres es 20'),
+  })
 
   const formik = useFormik({
     initialValues: {
-      search: "",
+      search: '',
     },
     validationSchema: searchSchema,
     onSubmit: (values) => {
-      console.log(values);
-      setFilterBy(values.search);
+      console.log(values)
+      //setFilterBy(values.search);
       // TODO go to component eventlist
     },
-  });
+  })
 
   return (
     <div className={styles.searchbarContainer}>
@@ -45,7 +46,7 @@ const Searchbar = () => {
         </button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Searchbar;
+export default Searchbar
