@@ -35,6 +35,18 @@ export function useAuth() {
         res();
       });
     },
+    register(values) {
+        console.log(values);
+        authService.register({
+            username: values.username,
+            email: values.email,
+            password: values.password,
+        })
+        .then(()=> {
+            setAuthed(true);
+            navigate("/");
+        })
+    }
   };
 }
 
