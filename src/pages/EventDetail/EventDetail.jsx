@@ -29,7 +29,8 @@ export default function EventDetail() {
             <img className={style.eventPhoto} src={event.photo} alt={`Foto de ${event.title}`} />
         </div>
         <p className={style.eventDate}>{`${event.date} ${event.time}`}</p>
-        <p className={style.eventMaxParticipants}>{`Aforo: ${event.max_participants}`}</p>
+        <p className={style.eventMaxParticipants}><strong>Aforo: </strong>{`${event.max_participants} participantes`}</p>
+        <h4 className={style.eventDetailHeader}>Detalles: </h4>
         <p className={style.eventDescription}>{event.description}</p>
         </div>
         <button className={style.eventSignInButton}>Apuntarse</button>

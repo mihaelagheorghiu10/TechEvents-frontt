@@ -5,10 +5,10 @@ const EventListContext = createContext();
 const mocklist = [
   {
     id: 1,
-    title: "Titulo 1",
-    description: "Descripción evento. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    date: "fecha",
-    time: "hora",
+    title: "Python in AI and Software- Engineer First Beer Networking",
+    description: "¡Prepárate para despegar hacia el apasionante mundo de la IA y la exploración espacial! Únete a nosotros para una noche de trabajo en red, aprendizaje y diversión en nuestro primer evento de Phytonistas y Coders en Barcelona. Nuestra discusión explorará los últimos avances en IA para el espacio, incluido el aprendizaje automático, el análisis de datos, la autonomía de las naves espaciales impulsadas por IA y más. Pero eso no es todo: también tendremos mucho tiempo para establecer contactos y debatir, para que puedas conectarte con otros entusiastas de la tecnología y aficionados al espacio. No pierdas la oportunidad de unirte a esta vibrante comunidad de profesionales con ideas afines y explorar la inteligencia artificial y la tecnología espacial de vanguardia. Tanto si eres un experto experimentado como si acabas de empezar a explorar estos emocionantes campos, hay algo para todos en este evento. ¡Así que ven y únete a nosotros para una noche llena de diversión explorando el futuro de la IA y el espacio! ¡Te veo allí!",
+    date: "Viernes, 28 de Abril, 2023",
+    time: "06:00 PM",
     photo: "https://media.istockphoto.com/id/1181250359/photo/business-people.jpg?s=612x612&w=0&k=20&c=1DFEPJdcvlhFdQYp-hzj2CYXXRn-b6qYoPgyOptZsck=",
     max_participants: 20,
     isHighLighted: false
