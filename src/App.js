@@ -6,6 +6,7 @@ import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import EventList from './pages/EventList/EventList';
 
+import EventDetail from './pages/EventDetail/EventDetail';
 
 function App() {
   return (
