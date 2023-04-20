@@ -1,0 +1,38 @@
+.eventDetailPage {
+    /* limits for page including navbar and footer */
+
+    margin-top: 30x;
+    margin-bottom: 80px;
+    height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.eventDetail {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.eventPhotoContainer {
+    /* width: 80svw; */
+    max-width: 800px;
+    /* height: 200px; */
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventPhoto {
+    width: 100%;
+    height:fit-content;
+}
