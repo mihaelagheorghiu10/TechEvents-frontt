@@ -19,7 +19,7 @@
     width:100%;
     max-width: 1020px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, clamp(300px, 80%, 400px));
     gap: 40px;
     justify-items: center;
     justify-content: center;
