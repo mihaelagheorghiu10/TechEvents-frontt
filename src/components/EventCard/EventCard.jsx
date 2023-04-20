@@ -7,11 +7,12 @@ export default function EventCard({event, key}) {
     <li className={style.eventCardContainer}>
       <div className={style.cardLeft}>
         <img className={style.cardImage} src={event.photo} alt={`Foto de ${event.title}`} />
+        <p className={style.cardInfo}>{`Lugar, ${event.date} ${event.time}`}</p>
       </div>
       <div className={style.cardRight}>
         <h3 className={style.cardTitle}>{event.title}</h3>
         <p className={style.cardDescription}>{event.description}</p>
-        <p className={style.cardInfo}>{`Lugar, ${event.date} ${event.time}`}</p>
+       
       </div>
     </li>
   )

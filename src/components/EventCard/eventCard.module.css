@@ -5,19 +5,23 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 5svw;
     /* border: 1px solid #CCC;
     padding: 10px;
     border-radius: 5px; */
+    overflow: hidden;
 }
 
 .cardLeft {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 150px;
-    width: 50%;
+    width: 55%;
+    gap: 15px;
     overflow: hidden;
+    font-size: x-small;
 }
 
 .cardImage {
@@ -25,7 +29,7 @@
 }
 
 .cardRight {
-    width: 50%;
+    width: 45%;
     height: 100%;
     font-size: x-small;
     display: flex;
@@ -34,5 +38,11 @@
     justify-content: space-around;
     align-items: center;
     text-align: justify;
-    gap: 5px;
+    gap: 15px;
+}
+
+
+
+.cardDescription {
+    overflow:hidden;    
 }
