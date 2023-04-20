@@ -1,4 +1,5 @@
 .EventListPage {
+    
     /* limits for page including navbar and footer */
 
     margin-top: 0px;
@@ -12,7 +13,7 @@
 }
 
 .EventList {
-    /* height: 100%; */
+    
     width:100%;
     max-width: 1020px;
     display: grid;
