@@ -15,6 +15,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/events" element = {<EventList/>}/>
+          <Route path="/events/:id" element = {<EventDetail/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element = {<Login/>}/>
         </Routes>
