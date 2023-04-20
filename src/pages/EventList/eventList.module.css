@@ -2,9 +2,11 @@
     
     /* limits for page including navbar and footer */
 
-    margin-top: 0px;
-    margin-bottom: 30px;
-    height: 100svh;
+    /* margin-top: 55px; */
+    /* margin-bottom: 80px; */
+    /* height: 100svh; */
+    min-height: 91svh;
+    height:100%;
 
     display: flex;
     flex-direction: column;
@@ -23,5 +25,5 @@
     justify-content: center;
     
     list-style-type: none;
-    overflow: hidden;
+    
 }
