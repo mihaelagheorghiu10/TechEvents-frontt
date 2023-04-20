@@ -15,20 +15,20 @@ const mocklist = [
   },
   {
     id: 2,
-    title: "Titulo 2",
-    description: "Descripción evento. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    date: "fecha",
-    time: "hora",
+    title: "WorkShop sobre diseño en PowerBI con CHARLIE BÉRGAMO",
+    description: "En este WorkShop nos acompañará Charlie Bérgamo para mostrarnos técnicas de diseño en Power BI. Durante la sesión aprenderás 6 trucos - jamás revelados - de visualización de datos para aplicar en Power BI. ➡️ Puedes ver los trabajos de Carlos en su perfil de Linkedin: Carlos Bérgamo Scarso | LinkedIn Nos hace muy felices contar con su presencia en nuestra comunidad, pues él es el creador de nuestro primer vídeo en este canal de Youtube, que se publicó el 18 de junio de 2020 😊 📹 Aquí puedes ver el vídeo: https://youtu.be/nr8ITp4Ppwk",
+    date: "Viernes, 21 de Abril, 2023",
+    time: "06:30 PM",
     photo: "https://media.istockphoto.com/id/857218864/photo/business-people-in-business-center-lobby.jpg?s=170667a&w=0&k=20&c=ZbrWIbfB_BJV-JEAJfSdvabNUCOcfYbs0QSSeDgTZbc=",
     max_participants: 25,
     isHighLighted: false
   },
   {
     id: 3,
-    title: "Titulo 3",
-    description: "Descripción evento. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    date: "fecha",
-    time: "hora",
+    title: "HR International Challenges - Global Talent",
+    description: "Volvemos a reunir a nuestra Barcelona HR Community para hablar de los retos que se presentan a los profesionales de RRHH. En esta ocasión hablaremos con Triana Palomo, de Safeguard Global, que nos dará pistas y consejos sobre la contratación de talento internacional: Cómo gestionar la expansión internacional desde RRHH, Cómo gestionar M&As desde RRHH, Qué es EOR, Qué evaluar en un partner de EOR, Qué servicios (que se gestionan desde RRHH) puede necesitar una empresa en expansión internacional, Contratación remota o cómo ser un empleador atractivo para nuevas generaciones. Estos serán algunos temas que abordaremos con nuestra invitada y con nuestra poderosa comunidad de profesionales de RRHH. Te esperamos el próximo día 24 de abril a las 18:30 en Aticco Verdaguer (C/ de Provença, 339). Este evento tiene el apoyo de Aticco Workspaces. evento. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+    date: "Lunes, 24 de Abril, 2023",
+    time: "06:30 PM",
     photo: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Messe_Luzern_Corporate_Event.jpg",
     max_participants: 30,
     isHighLighted: false
