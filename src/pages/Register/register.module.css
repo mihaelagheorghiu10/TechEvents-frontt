@@ -1,14 +1,17 @@
 .registerPage {
     /* limits for page including navbar and footer */
 
-    margin-top: 55px;
-    margin-bottom: 80px;
-    height: 100svh;
+    top: 55px;
+    bottom: 80px;
+    /* height: 100svh; */
+    min-height: 91svh;
+    height:100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 30px;
+    overflow: hidden;
 }
 
 .registerForm {
