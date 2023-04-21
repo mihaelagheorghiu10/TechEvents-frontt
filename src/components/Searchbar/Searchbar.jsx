@@ -5,7 +5,6 @@ import { useFormik } from 'formik'
 import styles from './searchbar.module.css'
 
 const Searchbar = () => {
-  //const { setFilterBy } = useContext(EventListContext);
   const context = useContext(EventListContext)
   console.log(context)
   let searchSchema = Yup.object().shape({
@@ -21,7 +20,7 @@ const Searchbar = () => {
     validationSchema: searchSchema,
     onSubmit: (values) => {
       console.log(values)
-      //setFilterBy(values.search);
+      context.setFilterBy(values.search);      
       // TODO go to component eventlist
     },
   })
