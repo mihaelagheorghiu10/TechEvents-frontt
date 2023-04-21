@@ -11,7 +11,6 @@ import EventDetail from './pages/EventDetail/EventDetail';
 
 
 function App() {
-
   return (
     <Router>
       <div className="App">
