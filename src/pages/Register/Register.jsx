@@ -2,8 +2,12 @@ import React from "react";
 import style from "./register.module.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import {useAuth} from "../../hooks/useAuth"
 
 export default function Register() {
+
+  const auth = useAuth();
+
   let registerSchema = Yup.object().shape({
     username: Yup.string()
       .min(8, "El número mínimo de caracteres es 8")
@@ -33,8 +37,9 @@ export default function Register() {
       confirmPassword: "",
     },
     validationSchema: registerSchema,
-    onSubmit: (e) => {
-      console.log(e);
+    onSubmit: async (values) => {
+      console.log(values);
+          await auth.register(values);
     },
   });
 

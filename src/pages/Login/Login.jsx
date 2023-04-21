@@ -2,9 +2,12 @@ import React from 'react'
 import style from './login.module.css'
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
+import {useAuth} from "../../hooks/useAuth"
 
 export default function Login() {
-    
+
+  const auth = useAuth();
+      
     let loginSchema = Yup.object().shape({
         email: Yup.string()
           .email("No es un email válido")
@@ -22,8 +25,10 @@ export default function Login() {
         },
         validationSchema: loginSchema,
         
-        onSubmit: (values) => {
+        onSubmit: async (values) => {
           console.log(values);
+          await auth.login(values);
+          
         },
       });
 
