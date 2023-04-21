@@ -1,6 +1,8 @@
 .searchbarContainer {
   padding: 0;
   margin: 0;
+  width: 100%;
+  max-width: 550px;
 }
 .searchForm {
   display: flex;
@@ -26,6 +28,7 @@
   color: #eee;
   font-size: 16;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .formikErrorMsg {
