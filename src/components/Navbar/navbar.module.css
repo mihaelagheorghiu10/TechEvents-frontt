@@ -10,11 +10,17 @@
   position: fixed;
   z-index: 100;
   box-sizing: border-box;
+  
 }
 
 .h1Title {
   font-size: 32px;
   vertical-align: middle;
+  
+}
+
+.link {
+  text-decoration: none;
 }
 
 .navbar {
