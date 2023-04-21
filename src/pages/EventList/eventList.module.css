@@ -17,7 +17,7 @@
 .EventList {
     
     width:100%;
-    max-width: 1020px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fit, clamp(300px, 80%, 400px));
     gap: 40px;
