@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
-import HomePage from './components/Pages/HomePage/HomePage'
+import HomePage from './pages/HomePage/HomePage'
 import EventList from './pages/EventList/EventList';
 import EventDetail from './pages/EventDetail/EventDetail';
 
@@ -12,16 +12,16 @@ import EventDetail from './pages/EventDetail/EventDetail';
 
 function App() {
 
-  return (    
+  return (
     <Router>
       <div className="App">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/events" element = {<EventList/>}/>
-          <Route path="/events/:id" element = {<EventDetail/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/login" element = {<Login/>}/>
+          <Route path="/events" element={<EventList />} />
+          <Route path="/events/:id" element={<EventDetail />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>

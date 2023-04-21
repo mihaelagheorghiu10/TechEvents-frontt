@@ -18,18 +18,18 @@ export const authService = {
   },
   register(data) {
     return axios
-        .post(`${this.urlLogin}/register`, data)
-        .then((res) => {
-            const registerUser = {
-                token: res.data.token,
-                loginName: res.data.loginName,
-                email: res.data.email,
-                role: res.data.role
-            };
-            localStorage.setItem("auth_token", res.data.token);
+      .post(`${this.urlLogin}/register`, data)
+      .then((res) => {
+        const registerUser = {
+          token: res.data.token,
+          loginName: res.data.loginName,
+          email: res.data.email,
+          role: res.data.role
+        };
+        localStorage.setItem("auth_token", res.data.token);
         localStorage.setItem("auth_email", res.data.email);
-        localStorage.setItem("auth", JSON.stringify(authUser));
-        })
-        .catch((err) => alert(err.response.data.message));
+        localStorage.setItem("auth", JSON.stringify(registerUser));
+      })
+      .catch((err) => alert(err.response.data.message));
   }
 }
