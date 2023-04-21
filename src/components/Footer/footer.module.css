@@ -1,6 +1,6 @@
 .footerContainer {
     
-    position: fixed;
+    position: sticky;
     bottom: 0px;
     display: flex;
     flex-wrap: nowrap;

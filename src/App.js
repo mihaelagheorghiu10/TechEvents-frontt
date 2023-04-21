@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Register from './pages/Register/Register'
 import Login from './pages/Login/Login'
 import EventList from './pages/EventList/EventList';
+import EventDetail from './pages/EventDetail/EventDetail';
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/events" element = {<EventList/>}/>
+          <Route path="/events/:id" element = {<EventDetail/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="/login" element = {<Login/>}/>
         </Routes>

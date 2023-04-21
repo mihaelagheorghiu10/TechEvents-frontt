@@ -2,9 +2,11 @@
     
     /* limits for page including navbar and footer */
 
-    margin-top: 0px;
-    margin-bottom: 30px;
-    height: 100svh;
+    /* margin-top: 55px; */
+    /* margin-bottom: 80px; */
+    /* height: 100svh; */
+    min-height: 91svh;
+    height:100%;
 
     display: flex;
     flex-direction: column;
@@ -17,10 +19,11 @@
     width:100%;
     max-width: 1020px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, clamp(300px, 80%, 400px));
     gap: 40px;
     justify-items: center;
     justify-content: center;
     
     list-style-type: none;
+    
 }

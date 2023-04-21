@@ -1,23 +1,27 @@
 .loginPage {
 /* limits for page including navbar and footer */
 
-    margin-top: 55px;
-    margin-bottom: 80px;
-    height: 100svh;
+    /* margin-top: 55px; */
+    /* margin-bottom: 80px; */
+    /* height: 100svh; */
+    min-height: 91svh;
+    height:100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 30px;
+    overflow: hidden;
 }
-
 .loginForm {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
     width: 100%;
     max-width: 550px;
+    padding-top: 130px;
 }  
 
 .labelInput {
