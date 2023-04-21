@@ -7,13 +7,14 @@ import {
   AiFillYoutube,
 } from "../../../node_modules/react-icons/ai";
 import { FaTiktok } from "../../../node_modules/react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <div className={style.footerContainer}>
       <div className={style.footerLeft}>
-        <p>Regístrate</p>
-        <p>Inicia sesión</p>
+        <Link className= {style.link} to={"/register"}><p>Regístrate</p></Link>
+        <Link className= {style.link} to={"/login"}><p>Inicia sesión</p></Link>
         <p>Ayuda</p>
       </div>
       <div className={style.footerRight}>
