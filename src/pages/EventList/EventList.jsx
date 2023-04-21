@@ -10,9 +10,7 @@ export default function EventList() {
     <div className={style.EventListPage}>
       <ul className={style.EventList}>
         {eventContext.eventList.map((event, index) => (
-          <li key={index}>
-            <EventCard event={event} />
-          </li>
+          <EventCard event={event} key={index} />
         ))}
       </ul>
     </div>

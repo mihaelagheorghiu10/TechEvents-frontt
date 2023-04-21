@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function EventCard({ event }) {
   return (
-    // <li >
-    <div className={style.eventCardContainer}>
+    <li className={style.eventCardContainer}>
       <div className={style.cardLeft}>
         <Link to={`/events/${event.id}`}>
           <img
@@ -22,7 +21,6 @@ export default function EventCard({ event }) {
           {event.description.substring(0, 250) + " . . ."}
         </p>
       </div>
-    </div>
-    // </li>
+    </li>
   );
 }
