@@ -10,8 +10,8 @@ import EventDetail from './pages/EventDetail/EventDetail';
 
 
 function App() {
-  return (
-    
+
+  return (    
     <Router>
       <div className="App">
         <Navbar/>
