@@ -42,7 +42,7 @@ export default function EventForm() {
         <div className={style.dateHour}>
           <div className={style.labelInput}>
             <label label htmlFor="date">
-              Título
+              Fecha
             </label>
             <input
               name="date"
@@ -54,7 +54,7 @@ export default function EventForm() {
           </div>
           <div className={style.labelInput}>
             <label label htmlFor="time">
-              Título
+              Hora
             </label>
             <input
               name="time"
@@ -88,6 +88,7 @@ export default function EventForm() {
             rows={6}
           />
         </div>
+        <button className={style.submitButton}>Editar</button>
       </div>
       <div className={style.previewForm}>
         <h2>Previsualizar</h2>
