@@ -53,18 +53,27 @@
 .dateHour {
     display: flex;
     gap: 15px;
+    width: 100%;
 }
 
-.registerButton {
+.imgButton #file-input-button {
     margin-top: 40px;
     background-color: #EE1C41;
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 20px;
     border: none;
 }
 
+.imgButton::-webkit-file-upload-button {
+    background-color: #EE1C41;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+}
 .errorToast {
     position:absolute;
     right: 5px;

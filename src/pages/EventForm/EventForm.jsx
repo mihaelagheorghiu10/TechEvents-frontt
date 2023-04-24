@@ -68,7 +68,7 @@ export default function EventForm() {
 
         <div className={style.labelInput}>
           <label htmlFor="image">Imagen</label>
-          <input
+          <input className={style.imgButton}
             name="image"
             id="image"
             type="file"
