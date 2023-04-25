@@ -74,6 +74,57 @@
     border-radius: 20px;
     border: none;
 }
+
+.previewForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:10px;
+}
+.cardPreviewForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    background-color:#ee1c4381;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.eventTitle {
+    font-size: 1.5rem;
+    text-align:left;
+}
+
+.eventPhotoContainer {
+    width: 90%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.eventPhoto {
+    width: 100%;
+    height:fit-content;
+}
+
+.eventDetailHeader {
+    width: 100%;
+    text-align: left;
+}
+
+.eventDescription {
+    
+    text-align: justify;
+    min-height: 80px;
+    width: 100%;
+}
+
 .errorToast {
     position:absolute;
     right: 5px;
