@@ -112,7 +112,7 @@ export default function EventForm() {
           <div className={style.eventPhotoContainer}>
             <img
               className={style.eventPhoto}
-              src={formik.values.image}
+              src={formik.values.image? formik.values.image: "https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg"}
               alt={`Foto de ${formik.values.title}`}
             />
           </div>
