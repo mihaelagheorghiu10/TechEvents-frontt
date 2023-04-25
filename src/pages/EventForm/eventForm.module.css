@@ -10,16 +10,18 @@
     align-items:baseline;
     padding: 100px 30px;
     overflow: scroll;  
-    gap: 30px;     
+    gap: 5%;     
 }
 
 .eventForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     gap: 15px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .labelInput {
@@ -81,6 +83,8 @@
     flex-wrap: nowrap;
     align-items: center;
     gap:10px;
+    width: 100%;
+    max-width: 400px;
 }
 .cardPreviewForm {
     display: flex;
@@ -91,6 +95,7 @@
     background-color:#ee1c4381;
     padding: 20px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .eventTitle {
@@ -123,6 +128,7 @@
     text-align: justify;
     min-height: 80px;
     width: 100%;
+    overflow: scroll;
 }
 
 .errorToast {
