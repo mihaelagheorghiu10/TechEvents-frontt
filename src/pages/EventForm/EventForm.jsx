@@ -16,6 +16,7 @@ export default function EventForm() {
       title: "",
       date: "",
       time: "",
+      max_participants: "",
       image: "",
       description: "",
     },
@@ -64,6 +65,19 @@ export default function EventForm() {
               onChange={formik.handleChange}
             />
           </div>
+          <div className={style.labelInput}>
+            <label label htmlFor="max_participants">
+              Aforo
+            </label>
+            <input
+              name="max_participants"
+              id="max_participants"
+              type="number"
+              value={formik.values.max_participants}
+              onChange={formik.handleChange}
+            />
+
+          </div>
         </div>
 
         <div className={style.labelInput}>
@@ -105,7 +119,7 @@ export default function EventForm() {
           <p className={style.eventDate}>{`${formik.values.date? new Date(formik.values.date).toLocaleDateString("es-ES"):""} ${formik.values.time}`}</p>
           <p className={style.eventMaxParticipants}>
             <strong>Aforo: </strong>
-            {`${"event.max_participants"} participantes`}
+            {`${formik.values.max_participants} participantes`}
           </p>
           <h4 className={style.eventDetailHeader}>Detalles: </h4>
           <p className={style.eventDescription}>{formik.values.description}</p>

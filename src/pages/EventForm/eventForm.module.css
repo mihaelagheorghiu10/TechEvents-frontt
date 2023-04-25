@@ -50,6 +50,10 @@
     padding: 10px 20px;
 }
 
+.labelInput::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
 .dateHour {
     display: flex;
     gap: 15px;
