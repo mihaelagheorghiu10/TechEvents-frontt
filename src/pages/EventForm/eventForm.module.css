@@ -1,8 +1,6 @@
 .eventFormPage {
      /* limits for page including navbar and footer */
 
-    margin-top: 30x;
-    margin-bottom: 30px;
     height: 100svh;
     display: flex;
     flex-wrap: wrap;
@@ -101,6 +99,7 @@
 .eventTitle {
     font-size: 1.5rem;
     text-align:left;
+    min-height: 2rem;
 }
 
 .eventPhotoContainer {
@@ -118,6 +117,13 @@
     height:fit-content;
 }
 
+.eventDate {
+    min-height: 2rem;
+}
+
+.eventMaxParticipants {
+    min-height: 2rem;
+}
 .eventDetailHeader {
     width: 100%;
     text-align: left;
@@ -128,7 +134,7 @@
     text-align: justify;
     min-height: 80px;
     width: 100%;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .errorToast {

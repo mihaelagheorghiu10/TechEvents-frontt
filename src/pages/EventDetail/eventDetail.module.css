@@ -50,8 +50,7 @@
 }
 
 .eventDescription {
-    text-align: justify;
-    min-height: 50px;
+    text-align: justify;    
 }
 
 .eventSignInButton {

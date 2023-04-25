@@ -94,21 +94,21 @@ export default function EventForm() {
         <h2>Previsualizar</h2>
         <hr />
         <div className={style.cardPreviewForm}>
-          <h2 className={style.eventTitle}>{"event.title"}</h2>
+          <h2 className={style.eventTitle}>{formik.values.title}</h2>
           <div className={style.eventPhotoContainer}>
             <img
               className={style.eventPhoto}
-              src={"event.photo"}
-              alt={`Foto de ${"event.title"}`}
+              src={formik.values.image}
+              alt={`Foto de ${formik.values.title}`}
             />
           </div>
-          <p className={style.eventDate}>{`${"event.date"} ${"event.time"}`}</p>
+          <p className={style.eventDate}>{`${formik.values.date? new Date(formik.values.date).toLocaleDateString("es-ES"):""} ${formik.values.time}`}</p>
           <p className={style.eventMaxParticipants}>
             <strong>Aforo: </strong>
             {`${"event.max_participants"} participantes`}
           </p>
           <h4 className={style.eventDetailHeader}>Detalles: </h4>
-          <p className={style.eventDescription}>{"event.description"}</p>
+          <p className={style.eventDescription}>{formik.values.description}</p>
         </div>
       </div>
     </div>
