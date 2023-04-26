@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './navbar.module.css'
 import userImage from '../Assets/user.png'
 import {Link} from 'react-router-dom'
 import { useAuth } from '../../hooks/useAuth'
+import NavMenu from '../NavMenu/NavMenu'
 
 export default function Navbar() {
-  const auth = useAuth();  
+  const auth = useAuth();
+  const [menuVisible, setMenuVisible] = useState(false);  
   console.log(auth);
   const toggleMenu = () => {
-    
+    setMenuVisible(!menuVisible);
   }
   return (
     <div className={styles.divContenedor}>
@@ -28,6 +30,7 @@ export default function Navbar() {
         />
         </div>
       </div>
+      {menuVisible? <NavMenu/> : ""}
     </div>
   )
 }
