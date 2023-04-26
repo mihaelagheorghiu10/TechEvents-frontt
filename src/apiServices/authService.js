@@ -12,6 +12,7 @@ export const authService = {
         };
         localStorage.setItem("auth_token", res.data.token);
         localStorage.setItem("auth_email", res.data.email);
+        localStorage.setItem("auth_loginName", res.data.loginName);
         localStorage.setItem("auth", JSON.stringify(authUser));
       })
       .catch((err) => alert(err.response.data.message));

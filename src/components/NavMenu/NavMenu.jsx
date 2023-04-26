@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function NavMenu() {
     const auth = useAuth();
+    
   return (
     <ul className={style.NavMenuContainer}>
         {auth.authed ?

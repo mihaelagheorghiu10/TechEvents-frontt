@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './navbar.module.css'
 import userImage from '../Assets/user.png'
 import {Link} from 'react-router-dom'
@@ -7,8 +7,17 @@ import NavMenu from '../NavMenu/NavMenu'
 
 export default function Navbar() {
   const auth = useAuth();
-  const [menuVisible, setMenuVisible] = useState(false);  
-  console.log(auth);
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [authorized, setAuthorized] = useState(auth.authed);
+  
+  const userName = localStorage.getItem("auth_loginName");
+
+  useEffect(() => {
+    setAuthorized(auth.authed)
+  }, [auth.authed]); 
+
+  console.log("auth" + auth.authed);
+  console.log("authorized" + authorized)
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   }
@@ -21,7 +30,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className={[styles.navbar, styles.navbarRight].join(' ')}>
-        <p>{auth.authed? "usuario" : "Invitado"}</p> 
+        <p>{auth.authed? userName : "Invitado"}</p> 
         <div className={styles.imgContainer}>
         <img
           src={auth.authed? "usuario" : userImage}

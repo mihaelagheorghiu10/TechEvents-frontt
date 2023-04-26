@@ -13,8 +13,7 @@ export function useAuth() {
 
   return {
     authed,
-    login(values) {
-        console.log(values)
+    login(values) {        
       authService
         .login({
           email: values.email,
@@ -30,6 +29,7 @@ export function useAuth() {
         window.localStorage.removeItem("auth");
         window.localStorage.removeItem("auth_token");
         window.localStorage.removeItem("auth_email");
+        window.localStorage.removeItem("auth_loginName");
 
         setAuthed(false);
         res();
