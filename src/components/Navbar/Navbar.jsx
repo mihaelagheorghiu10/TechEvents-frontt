@@ -13,6 +13,7 @@ export default function Navbar() {
     setMenuVisible(!menuVisible);
   }
   return (
+    <>
     <div className={styles.divContenedor}>
       <div className={[styles.navbar, styles.navbarLeft].join(' ')}>
         <Link className={styles.link} to={"/events"}>
@@ -29,8 +30,10 @@ export default function Navbar() {
           onClick={()=>toggleMenu()}
         />
         </div>
-      </div>
-      {menuVisible? <NavMenu/> : ""}
+        
+      </div>      
     </div>
+    {menuVisible? <NavMenu/> : <></>}
+    </>
   )
 }
