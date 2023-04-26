@@ -48,6 +48,7 @@
     width: 100%;    
     border-radius: 10px;
     padding: 10px 20px;
+    resize: none;
 }
 
 .labelInput::-webkit-inner-spin-button {
@@ -56,8 +57,16 @@
 
 .dateHour {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     width: 100%;
+}
+
+.dateHour input{
+    padding: 5px;
+}
+
+.dateHour input #max_participants{
+    width: 30px !important;
 }
 
 .imgButton #file-input-button {
