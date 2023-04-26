@@ -40,3 +40,16 @@
 .navbarLeft {
   justify-content: left;
 }
+
+.imgContainer {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.userImage {
+  width:100%;
+}
