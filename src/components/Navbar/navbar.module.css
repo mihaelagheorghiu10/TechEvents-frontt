@@ -53,3 +53,8 @@
 .userImage {
   width:100%;
 }
+
+.userImage:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

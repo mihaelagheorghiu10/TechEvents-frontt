@@ -11,11 +11,12 @@ export default function NavMenu() {
             <ul className={style.navMenuList}> 
                 <li>Perfil</li>
                 <li>Mis Eventos</li>
-                <li>Logout</li>
+                <li onClick={()=> auth.logout()}>Logout</li>
             </ul>
         :
             <ul className={style.navMenuList}>
-                <Link to="/login"><li>Login</li></Link>
+                <Link className={style.menuLink} to="/login" ><li>Iniciar Sesión</li></Link>
+                <Link className={style.menuLink} to="/register"><li>Registrarse</li></Link>
             </ul>
     }        
     </ul>

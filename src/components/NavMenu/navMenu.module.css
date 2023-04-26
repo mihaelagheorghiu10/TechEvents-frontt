@@ -4,11 +4,26 @@
     right: 0;
     z-index: 100;
     list-style: none;
-    background-color: #ee1c43e8;
-    padding: 20px 10px;
-    width: 200px;
-    font-size: large;
+    /* background-color: #ee1c43e8; */
+    background: linear-gradient(#ee1c43, #ee1c43e3);
+    padding: 30px 10px 20px 10px;
+    width: 250px;
+    font-size: x-large;
     color: white;
     border-radius: 0 0 5px 5px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.menuLink {
+    text-decoration: none;
+}
+
+.menuLink:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
