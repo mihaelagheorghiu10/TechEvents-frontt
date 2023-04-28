@@ -7,6 +7,7 @@ import Login from './pages/Login/Login'
 import HomePage from './pages/HomePage/HomePage'
 import EventList from './pages/EventList/EventList';
 import EventDetail from './pages/EventDetail/EventDetail';
+import EventForm from './pages/EventForm/EventForm'
 
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/events/:id" element={<EventDetail />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/eventForm" element={<EventForm/>}/>
         </Routes>
         <Footer />
       </div>

@@ -1,0 +1,192 @@
+.eventFormPage {
+     /* limits for page including navbar and footer */
+
+    height: 100svh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:baseline;
+    padding: 100px 30px;
+    overflow: scroll;  
+    gap: 5%;     
+}
+
+.eventForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.labelInput {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+    width: 100%;
+    position:relative;
+
+}
+
+.labelInput label {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.labelInput input {
+    width: 100%;
+    height: 26px;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.labelInput textarea {
+    width: 100%;    
+    border-radius: 10px;
+    padding: 10px 20px;
+    resize: none;
+}
+
+.labelInput::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+.labelInput button{
+    background-color: #EE1C41;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+ }
+
+.dateHour {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.dateHour input{
+    padding: 5px;
+}
+
+.dateHour input #max_participants{
+    width: 30px !important;
+}
+
+.imgButton #file-input-button {
+    margin-top: 40px;
+    background-color: #EE1C41;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.imgButton::-webkit-file-upload-button {
+    background-color: #EE1C41;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.urlUpload {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+
+}
+
+.urlUpload input {
+    width: 310px;
+}
+
+.previewForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    max-width: 400px;
+}
+.cardPreviewForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    background-color:#ee1c4381;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.eventTitle {
+    font-size: 1.5rem;
+    text-align:left;
+    min-height: 2rem;
+}
+
+.eventPhotoContainer {
+    width: 90%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+    
+}
+
+.eventPhotoContainer img {
+    width:100%;
+    /* height:fit-content; */
+    
+}
+
+.eventDate {
+    min-height: 2rem;
+}
+
+.eventMaxParticipants {
+    min-height: 2rem;
+}
+.eventDetailHeader {
+    width: 100%;
+    text-align: left;
+}
+
+.eventDescription {
+    
+    text-align: justify;
+    min-height: 80px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.errorToast {
+    position:absolute;
+    right: 5px;
+    bottom: -20px;
+    font-size: smaller;    
+}
+
+.submitButton {
+    margin-top: 40px;
+    background-color: #EE1C41;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    
+}
