@@ -40,7 +40,6 @@ export default function EventDetail() {
         <p className={style.eventDescription}>{event.description}</p>
       </div>
       <button className={style.eventSignInButton}>Apuntarse</button>
-    </div>
-    
+    </div>    
   );
 }
