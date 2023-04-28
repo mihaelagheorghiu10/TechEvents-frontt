@@ -41,5 +41,6 @@ export default function EventDetail() {
       </div>
       <button className={style.eventSignInButton}>Apuntarse</button>
     </div>
+    
   );
 }
