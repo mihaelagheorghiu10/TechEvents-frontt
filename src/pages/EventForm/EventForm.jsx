@@ -42,6 +42,7 @@ export default function EventForm() {
     <Uploady
       debug
       destination={{ url: "src/userPhotos" }}
+      multiple={false}
       
     >
       <div className={style.eventFormPage}>
